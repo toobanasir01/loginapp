@@ -9,13 +9,14 @@ class RegisterScreen extends StatefulWidget {
 }
 
 class _RegisterScreenState extends State<RegisterScreen> {
+
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
     final passwordValidator =
         MultiValidator([RequiredValidator(errorText: "required"),
-        LengthRangeValidator(min: 5, max: 8, errorText: "Enter Strong paswword min 5 to 8 words")]);
-    var password;
+        LengthRangeValidator(min: 5, max: 8, errorText: "Enter Strong password min 5 to 8 words")]);
+    dynamic password;
     GlobalKey<FormState> formKey2 = GlobalKey<FormState>();
 
     return Scaffold(
@@ -35,7 +36,14 @@ class _RegisterScreenState extends State<RegisterScreen> {
                   style: TextStyle(fontSize: 40),
                 ),
                 const SizedBox(
-                  height: 20,
+                  height: 10,
+                ),
+                const Text(
+                  "Create your account",
+                  style: TextStyle(fontSize: 14),
+                ),
+                const SizedBox(
+                  height: 40,
                 ),
                 TextFormField(
                   validator: RequiredValidator(errorText: "Required*"),
@@ -55,7 +63,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                 TextFormField(
                   validator: MultiValidator([
                     EmailValidator(errorText: "enter a valid email address"),
-                    RequiredValidator(errorText: "this fieled is required")
+                    RequiredValidator(errorText: "this field is required")
                   ]),
                   cursorColor: Colors.grey,
                   decoration: const InputDecoration(
@@ -71,6 +79,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                   height: 20,
                 ),
                 TextFormField(
+
                   onChanged: (val) => password = val,
                   validator: passwordValidator,
                   obscureText: true,
@@ -118,7 +127,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                           if (formKey2.currentState!.validate() == true) {
                             Navigator.pop(context);
                           } else {
-                            ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+                            ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
                                 content: Text("Please filled all field")));
                           }
                         },
@@ -140,7 +149,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                     GestureDetector(
                       child: const Text(
                         "Login",
-                        style: TextStyle(fontWeight: FontWeight.bold),
+                        style: TextStyle(fontWeight: FontWeight.bold,color: Color(0xff395BA9)),
                       ),
                       onTap: () {
                         Navigator.pop(context);

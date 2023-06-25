@@ -1,16 +1,9 @@
-# assignment6
+#Assignment6
+#login Screen
+![Login screen](https://github.com/toobanasir01/loginapp/assets/126052446/710e5478-332d-48b4-b523-efa503d57e5e)
 
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+#Register Screen
+![RegisterScreen1](https://github.com/toobanasir01/loginapp/assets/126052446/0c7598f3-0bee-4603-8ca2-c16d1aa5c1da)
+![RegisterScreen2](https://github.com/toobanasir01/loginapp/assets/126052446/5cedeed9-ea2d-4997-ac68-a3fda6458761)
+#HomeScreen
+![HomeScreen](https://github.com/toobanasir01/loginapp/assets/126052446/43191184-b48c-4e05-9620-7708bc6e945c)

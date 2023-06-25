@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 
 class HomeScreen extends StatelessWidget {
-   HomeScreen({super.key,required this.name});
+  HomeScreen({super.key,required this.name});
   String name;
 
   @override
@@ -14,38 +14,38 @@ class HomeScreen extends StatelessWidget {
         child: Column(
           children: [
             Container(
-              padding: EdgeInsets.all(16),
+              padding: const EdgeInsets.all(16),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Text("Login "),
+                  const Text("Login "),
 
 
                   GestureDetector(
-                    child: CircleAvatar( child: Icon(Icons.logout,size: 30.9,)),
+                    child: const CircleAvatar( child: Icon(Icons.logout,size: 30.9,)),
                     onTap: (){
 
-                    Navigator.pop(context);
+                      Navigator.pop(context);
 
-                  },)
+                    },)
 
                 ],
               ),
             ),
             Expanded(
               child: Center(
-                child: Container(
+                child: SizedBox(
                   width: size.width,
                   height: size.height,
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    const Text("Welcome",style: TextStyle(fontSize: 30),),
-                    Text(
-                      name,
-                      style: const TextStyle(fontSize: 40, color: Colors.black, fontWeight: FontWeight.bold),
-                    ),
-                  ],
+                    children: [
+                      const Text("Welcome",style: TextStyle(fontSize: 30),),
+                      Text(
+                        name,
+                        style: const TextStyle(fontSize: 40, color: Colors.black, fontWeight: FontWeight.bold),
+                      ),
+                    ],
                   ),
                 ),
               ),

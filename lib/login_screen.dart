@@ -32,14 +32,16 @@ class _LoginScreenState extends State<LoginScreen> {
               children: [
                 const Text(
                   "Welcome back",
-                  style: TextStyle(fontSize: 40),
+                  style: TextStyle(fontSize: 45),
                 ),
+
+
                 const Text(
                   "Login your account",
                   style: TextStyle(fontSize: 16),
                 ),
                 const SizedBox(
-                  height: 20,
+                  height: 50,
                 ),
                 TextFormField(
                   controller: nameCtrl,
@@ -70,7 +72,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   ]),
                   obscureText: true,
                   cursorColor: Colors.grey,
-                  decoration: InputDecoration(
+                  decoration: const InputDecoration(
                       hintText: "Password",
                       prefixIcon: Icon(
                         Icons.password,
@@ -120,7 +122,9 @@ class _LoginScreenState extends State<LoginScreen> {
                         child: const Text(
                           "SignUp",
                           style: TextStyle(
-                              fontSize: 15, fontWeight: FontWeight.bold),
+                              fontSize: 15, fontWeight: FontWeight.bold,color: Color(0xff395BA9),
+                          ),
+
                         ),
                         onTap: () {
                           Navigator.push(
